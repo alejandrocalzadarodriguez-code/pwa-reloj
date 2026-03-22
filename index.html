@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PWA Reloj</title>
+
+    <!-- Vincular CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#0d6efd" />
+</head>
+<body>
+    <h1>Hora actual</h1>
+    <div id="clock">--:--:--</div>
+
+    <!-- Código JS -->
+    <script src="app.js"></script>
+
+    <!-- Registrar Service Worker -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js")
+                .then(() => console.log("Service Worker registrado"))
+                .catch((err) => console.error("Error al registrar el SW:", err));
+        }
+    </script>
+</body>
+</html>
