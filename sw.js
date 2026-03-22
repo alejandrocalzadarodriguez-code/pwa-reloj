@@ -5,8 +5,8 @@ const FILES_TO_CACHE = [                                    // Lista de archivos
     "style.css",                                            // Hoja de estilos
     "app.js",                                               // Lógica del reloj
     "manifest.json",                                        // Configuración de la PWA
-    "icons/icon-192.svg",                                   // Icono para dispositivos (tamaño 192px)
-    "icons/icon-512.svg"                                    // Icono para dispositivos (tamaño 512px)
+    "reloj-small",                                   // Icono para dispositivos (tamaño 192px)
+    "reloj-big"                                    // Icono para dispositivos (tamaño 512px)
 ];
 
 self.addEventListener("install", event => {                 // Evento que se ejecuta al instalar el Service Worker
