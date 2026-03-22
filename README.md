@@ -17,9 +17,8 @@ pwa-reloj
 │── app.js
 │── sw.js
 │── manifest.json
-│── /Recuros/Iconos
-│     ├── icon-192.svg
-│     └── icon-512.svg
+│── reloj-small.svg
+│── reloj-big.svg
 
 
 ####🚀 Cómo ejecutar el proyecto
